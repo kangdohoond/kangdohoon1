@@ -22,4 +22,4 @@ find(arr, end, len(end)) # current,tail,tail길이
 if find(arr, end, len(end)) == 0:
     print("1")
 else:
-    print("0")
+    print("0") # 0
