@@ -10,8 +10,8 @@ import pandas as pd
 # [[1,2],
 #  [3,4],
 #  [5,6]],
-#     columns = ['a','b'])   # 꼭 columns 를 써야함 다른 변수 안 됨
-# print(df)
+#     columns = ['a','b'])   # 꼭 columns 를 써야함 다른 변수 안 됨  # 바꾸고싶으면 df.columns=['가', '나']
+# print(df)   
 # pd.concat ([]) = 데이터를 병합하다 라는 뜻 
 df1 = pd.DataFrame({
     'col1' : [1,2,3,4,5],
@@ -80,7 +80,7 @@ w()
 df1 = pd.DataFrame({
     'a' : [1,2,3],
     'b' : [ 4,5,6]
-})
+})   
 df2 = pd.DataFrame({
     'a' : [7,8,9],
     'b' : [10,11,12]

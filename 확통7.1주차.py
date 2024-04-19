@@ -10,12 +10,13 @@ import matplotlib.pyplot as plt
 
 # 100명이 전부 75점 받으면 분산 -> 0
 
-# 이산확률분포가 가중치 고려한 평균 
+# 이산확률분포가 가중치 고려한 평균 = E(x)
 # 16페이지 이산확률분포 첫줄이 편차제곱 *확률 # 제곱 필수
 
 # 분산 이산확률분포 : E(x^2) - E(x)^2
 
 # E(x) = X * P(x)  -> 즉 E(x^2) = X^2 * P(x)
+# x  p(x)  x*p(x)     (x^2)*p(x) # < E(x^2)
 
 # 이항확률분포 : 오직 두가지의 경우의 수 (성공 실패만 있는 실험을 n회 반복적
 # 으로 시행한다고 할 때 성공실패 횟수를 나타내는 확률변수 x 가 갖게 될 분포)
@@ -36,7 +37,7 @@ prob = binom.pmf(x,n,p) # ppt 23페이지 확률분포표 p(x) 이게 stats 임 
 
 print('mean=', mean, 'var=', var)
 plt.bar(x,prob)
-plt.title('binom(n=5, p=0.5)')
+plt.title('binom(n=5, p=0.5)') # 품질보증 머시기는 뭐임?
 plt.show()
 print(prob)
 

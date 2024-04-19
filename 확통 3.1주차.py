@@ -3,8 +3,8 @@ import pandas as pd
 # 모집단추정 -> OO분포라고 가정하자 , 
 fish = np.array([2,3,3,4,4,4,4,5,5,6])
 
-print(f"16번 \n분산 : {fish.var()} {np.var(fish)}")
-print(f"불편분산 : {fish.var(ddof=1)} {np.var(fish,ddof=1)}")  # 표본분산,  ddof = 1은 표본분산을 계산할 때,
+print(f"16번 \n분산 : {fish.var()} {np.var(fish)}")  # 
+print(f"불편분산 : {fish.var(ddof=1)} {np.var(fish,ddof=1)}")  # 표본분산,  ddof = 1은 불편분산을 계산할 때,
 print(f"표준편차 : {fish.std()} {np.std(fish)}")      # 표준편차
 print(f"불편표준편차 : {fish.std(ddof=1)} {np.std(fish, ddof=1)}")
 
