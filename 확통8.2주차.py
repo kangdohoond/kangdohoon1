@@ -60,6 +60,11 @@ plt.bar(x,y)
 plt.show()
 
 
-m = 0
+m = 0 
 s = 1
 print(norm.ppf(0.975,m,s))
+
+
+
+
+
