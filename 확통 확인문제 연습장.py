@@ -69,7 +69,17 @@ x2 = norm.cdf(1.5,m,s)
 print(x-x2)
 
 number(10.5)
+
+print(1-0.93319)
+
+m = 0
+s = 1
+x = norm.cdf(1.5,m,s)
+print(1-x)
+
 number(10.6)
+
+
 
 
 
