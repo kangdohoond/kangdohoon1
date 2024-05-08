@@ -79,6 +79,119 @@ print(1-x)
 
 number(10.6)
 
+print(1-0.97725)
+
+m=0
+s=1
+
+x = norm.cdf(2,m,s)
+print(1-x)
+
+number(11.1)
+
+m=75
+s = 10
+
+x = norm.cdf(90,m,s)
+print(1-x)
+
+number(11.2)
+
+m=75
+s=10
+
+x = norm.cdf(70,m,s)
+x2 = norm.cdf(80,m,s)
+
+print(x2-x)
+
+number(11.3)
+
+m=75
+s=10
+x = norm.cdf(60,m,s)
+print(x)
+
+
+number(12.1)
+
+z = (90-75)/10 # 1.5
+
+m=0
+s=1
+x = norm.cdf(z,m,s)
+print(1-x)
+
+number(12.2)
+
+z = (70 - 75)/10
+z1 = (80 - 75) / 10
+m=0
+s=1
+x = norm.cdf(z,m,s)
+x2 = norm.cdf(z1,m,s)
+ze = norm.cdf(0,m,s)
+
+print(x2 -x)
+
+print(2*(x2-ze)) # 다른 방법
+
+number(12.3)
+
+z = (60-75)/10   # 양수로 계산 할거면 1-x 해야함
+
+m=0
+s=1
+
+x = norm.cdf(z,m,s)
+print(x)
+
+number(13.1)
+#1.64 ~ 1.65 즉 1.64xxx가 나와야함
+m = 0
+s=1
+print(norm.ppf(0.95,m,s))
+# 동일
+
+number(13.2)
+# 표 찾아보면 1.95xxxx가 나옴
+m = 0
+s=1
+print(norm.ppf(0.975,m,s))
+# 동일
+
+number(13.3)
+# 음수표까지 찾아보면 -1.644xxx 임
+m = 0
+s=1
+
+print(norm.ppf(0.05,m,s))
+#동일 
+
+number(13.4)
+# 음수표까지 찾아보면 -2.32xxx 가 나옴
+m = 0
+s=1
+print(norm.ppf(0.01,m,s))
+# 동일
+
+number(13.5)
+# 1.28 xx ~ 1.29 임 즉 1.28xxx
+m = 0
+s=1
+print(norm.ppf(0.9,m,s))
+
+
+
+d
+
+
+
+
+
+
+
+
 
 
 
