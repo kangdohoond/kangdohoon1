@@ -136,12 +136,37 @@ print(f"불편분산 : {np.var(a, ddof=1)}")
 
 # 15번 16번 과제
 # 15번 t분포
+print()
+print()
 n = 25
 mean = 35
 s = 5
-print(t.)
+sem = s/ np.sqrt(n)
+zu = t.ppf(0.975,df=24)
+print(f"하한 : {mean-zu*s/np.sqrt(n)}")
+print(f"상한 : {mean+zu*s/np.sqrt(n)}")
+
+print(t.interval(0.95,24,loc=mean, scale=sem))
+
+# 16번 
+n = 20
+mean = 170
+s = 15
+sem = s/np.sqrt(n)
+zu = t.ppf(0.975,df=19)
+print(f"95% 하한 : {mean-zu*s/np.sqrt(n)}")
+print(f"95% 상한 : {mean+zu*s/np.sqrt(n)}")
+print(f"95% : {t.interval(0.95, 19, loc=mean, scale=sem)}")
+
+
+zu = t.ppf(0.995,df=19)
+print(f"99% 하한 : {mean-zu*s/np.sqrt(n)}")
+print(f"99% 상한 : {mean+zu*s/np.sqrt(n)}")
+print(f"99% : {t.interval(0.99, 19, loc=mean, scale=sem)}")
+
 
 # 확인문제 17번
+
 
 """
 n=10 n=50 표본의 크기가 커지면 신뢰구간은 좁혀짐

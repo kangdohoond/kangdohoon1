@@ -92,4 +92,4 @@ print(f"상한 : {m + zu * s / np.sqrt(n)}")
 
 print(f"{norm.interval(0.95, m,s/np.sqrt(n))}")  
 
-# 
+# 19 20 21 번 중요한 듯?
