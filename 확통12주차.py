@@ -79,14 +79,13 @@ else :
 
 # 6장 확인문제 1번 시험 이렇게 나옴 
 
-"""
-H0 = 6300
-H1 = 
-"""
-
 data = pd.read_excel("C:/Users/kiiti/Downloads/S기업_점심비용.xlsx")
 mu = 6300
 n = 100
+
+# H0 : mu = 6300
+# H1 : mu != 6300
+
 print(data.describe())
 
 plt.hist(data, label = 'lunch', bins = 7)
@@ -95,7 +94,7 @@ plt.show()
 
 #손수 한 코드
 t = (np.mean(data)-mu)/(np.std(data, ddof=1)/np.sqrt(n))
-print(f"t값 : {t}")
+print(f"{"\n"}t값 : {t}")
 p = 1-stats.t.cdf(t, n-1)   # stats 붙인 이유 : from scipy.stats import t 이게 없으면 stats를 쓰고, 있으면 빼도됨
 print(f"p값 : {p}")
 
@@ -114,19 +113,13 @@ else :
 
 
 
-
-
-
-
-
-
-
-
 # 6장 2번
 
 data = pd.read_csv("C:/Users/kiiti/Downloads/스마트폰_이용시간.csv", header = None)
 mu = 35
 n = 40
+# H0 : mu = 35
+# H1 : mu != 35
 print(data.describe())
 
 plt.hist(data, label = 'smart phone', bins = 7)
@@ -135,7 +128,7 @@ plt.show()
 
 #손수 한 코드
 t = (np.mean(data)-mu)/(np.std(data, ddof=1)/np.sqrt(n))
-print(f"t값 : {t}")
+print(f"{"\n"}t값 : {t}")
 p = 1-stats.t.cdf(t, n-1)   # stats 붙인 이유 : from scipy.stats import t 이게 없으면 stats를 쓰고, 있으면 빼도됨
 print(f"p값 : {p}")
 
@@ -155,28 +148,13 @@ else :
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 3번
 
 data = pd.read_csv("C:/Users/kiiti/Downloads/스마트폰_이용요금.txt", header = None)
 mu = 68000
 n = 80
-# H0 = 68000 홈페이지 입장
-# H1 = 6.8만원 이상내고있다 . c군 입장 
+# H0 = 68000 홈페이지 입장 mu=68000
+# H1 = 68000<mu. c군 입장 
 print(data.describe())
 
 plt.hist(data, label = 'smart phone', bins = 7)
@@ -185,7 +163,7 @@ plt.show()
 
 #손수 한 코드
 t = (np.mean(data)-mu)/(np.std(data, ddof=1)/np.sqrt(n))
-print(f"t값 : {t}")
+print(f"{"\n"}t값 : {t}")
 p = 1-stats.t.cdf(t, n-1)   # stats 붙인 이유 : from scipy.stats import t 이게 없으면 stats를 쓰고, 있으면 빼도됨
 print(f"p값 : {p}")
 
