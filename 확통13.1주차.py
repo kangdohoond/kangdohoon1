@@ -68,7 +68,7 @@ levene 를 사용해서 등분산인지 이분산인지 결정
 re = stats.levene(data1.male, data2.female, center = 'mean')
 print(re)
 
-# 질문 : 만약 이분산이라고 가정하면, levene에서 나온 p 값이랑 ttest_ind(~~~~~ , equal = False)랑 p값이 같은지?
+# 질문 : 만약 이분산이라고 가정하면, levene에서 나온 p 값이랑 ttest_ind(~~~~~ , equal = False)랑 p값이 같은지? 다름 
 """
 ttest_ind 랑 + from_stats 차이는 전자는 원본 데이터 있을 때 
 후자는 딱 데이터가 정해져있을 때 
