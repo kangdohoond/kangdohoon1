@@ -46,7 +46,7 @@ plt.show()
 data1 = pd.read_excel("C:/Users/kiiti/Downloads/6.2/대학생_수면시간_남자.xlsx")
 data2 = pd.read_excel("C:/Users/kiiti/Downloads/6.2/대학생_수면시간_여자.xlsx")
 
-result = stats.ttest_ind(data1.male, data2.female, alternative = 'two-sided', equal_var = False)
+result = stats.ttest_ind(data1.male, data2.female, alternative = 'two-sided', equal_var = False)  # alter 머시기 = 양측 단측구분
 print(result)
 
 
