@@ -97,7 +97,7 @@ print(result)
 
 # 단측 , 
 
-data = pd.read_excel("C:/Users/kiiti/Downloads/배터리,근로,성적,체중\체중비교.xlsx")
+data = pd.read_excel("C:/Users/kiiti/Downloads/배터리,근로,성적,체중/체중비교.xlsx")
 print(data[['before', 'after']].describe())
 
 
